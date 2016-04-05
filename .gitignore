@@ -1,0 +1,9 @@
+.idea/
+target/
+out/
+META-INF/
+*.txt
+*.iml
+*.rdb
+*.log
+*.gz
