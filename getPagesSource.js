@@ -9,9 +9,11 @@ function DOMtoString(document_root) {
         case Node.ELEMENT_NODE:
             html += node.outerHTML;
             break;
+        	/*
         case Node.TEXT_NODE:
             html += node.nodeValue;
             break;
+            /*
         case Node.CDATA_SECTION_NODE:
             html += '<![CDATA[' + node.nodeValue + ']]>';
             break;
@@ -22,6 +24,7 @@ function DOMtoString(document_root) {
             // (X)HTML documents are identified by public identifiers
             html += "<!DOCTYPE " + node.name + (node.publicId ? ' PUBLIC "' + node.publicId + '"' : '') + (!node.publicId && node.systemId ? ' SYSTEM' : '') + (node.systemId ? ' "' + node.systemId + '"' : '') + '>\n';
             break;
+            */
         }
         node = node.nextSibling;
     }
